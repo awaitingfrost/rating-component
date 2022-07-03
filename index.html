@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <div class="main-container">
+      <div class="container">
+        <img src="./images/icon-star.svg" alt="" class="container--star" />
+        <h1 class="heading-1">How did we do?</h1>
+        <p class="container--text">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="ratings">
+          <button class="rating rating--1" data-value="1">1</button
+          ><button class="rating rating--2" data-value="2">2</button
+          ><button class="rating rating--3" data-value="3">3</button
+          ><button class="rating rating--4" data-value="4">4</button
+          ><button class="rating rating--5" data-value="5">5</button>
+        </div>
+        <button class="container--submit">Submit</button>
+      </div>
+      <div class="thankyou d-none">
+        <img
+          src="./images/illustration-thank-you.svg"
+          alt="thank you picutre"
+          class="thankyou--image"
+        />
+        <div class="selected--rating">
+          <p>You selected <span class="rating-no">0</span> out of 5</p>
+        </div>
+        <h2 class="heading-2">Thank you!</h2>
+        <p class="thankyou--text">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+
+    <!-- You selected -->
+    <!-- Add rating here -->
+    <!-- out of 5 Thank you!  -->
+
+    <!-- Thank you state end -->
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --organge: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-gery: hsl(216, 12%, 54%);
+  --dark-blue: rgb(37, 45, 55);
+  --dark-blue-opacity: rgba(59, 69, 80, 0.5);
+
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+}
+body {
+  background-color: var(--very-dark-blue);
+  color: #fff;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container,
+.thankyou {
+  margin: 0 8%;
+  background-color: var(--dark-blue);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.container--star {
+  padding: 10px;
+  background-color: var(--dark-blue-opacity);
+  border-radius: 50%;
+}
+
+.heading-1 {
+  font-size: 20px;
+  margin: 15px 0;
+  font-weight: 700;
+}
+
+.container--text {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--medium-gery);
+}
+
+.ratings {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.ratings > * {
+  border: none;
+  border-radius: 50%;
+  padding: 13px 17px;
+  background-color: var(--dark-blue-opacity);
+  color: var(--light-grey);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.ratings > *:hover {
+  background-color: var(--organge);
+  color: #fff;
+}
+.ratings > *:active,
+.ratings > *:focus {
+  background-color: var(--light-grey);
+  color: white;
+}
+.container--submit {
+  width: 100%;
+  border-radius: 100px;
+  border: none;
+  padding: 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  color: #fff;
+  background-color: var(--organge);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.container--submit:hover {
+  background-color: #fff;
+  color: var(--organge);
+}
+/* Desktop */
+
+@media only screen and (min-width: 410px) {
+  .container,
+  .thankyou {
+    width: 370px;
+    margin: 0;
+  }
+  .thankyou--text {
+    padding: 18px;
+  }
+}
+.thankyou {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.thankyou--image {
+  margin: 10px 0;
+}
+.selected--rating {
+  margin: 10px 0;
+  color: var(--organge);
+  background-color: var(--dark-blue-opacity);
+  padding: 8px;
+  border-radius: 100px;
+}
+.heading-2 {
+  margin: 10px 0;
+}
+
+.thankyou--text {
+  text-align: center;
+  color: var(--medium-gery);
+  font-size: 13px;
+  margin: 5px 0 0 0;
+}
+
+.d-none {
+  display: none;
+}
